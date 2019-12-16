@@ -1,0 +1,16 @@
+#header {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#character-name{
+    font-size: 200%;
+}
+#character-description{
+    font-size: 150%;
+}
+
