@@ -26,7 +26,7 @@ export default class App extends Component {
       return (
         <div id="App">
           <button id="generate-button" onClick={this.generateCharacter}>
-            Generate a Character!
+            Ass
           </button>
           <CharSheet id="character-sheet" character={this.state.character} />
         </div>
