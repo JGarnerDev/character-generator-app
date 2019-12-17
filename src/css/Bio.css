@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   width: 95%;
   height: auto;
+  margin-top: 30%;
 }
 
 .bio-info {
@@ -20,5 +21,4 @@
 
 .bio-paragraph {
   width: 100%;
-
 }
