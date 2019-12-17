@@ -1,26 +1,39 @@
 import React from "react";
-import '../css/CharSheet.css'
+import "../css/CharSheet.css";
 
 import Header from "./Header";
+import BriefSummary from "./BriefSummary";
 import Abilities from "./Abilities";
-import AttacksAndSpellcasting from "./AttacksAndSpellcasting";
-import Bio from "./Bio";
-import Equipment from "./Equipment";
-import Features from "./Features";
-import Items from "./Items";
 import Proficiencies from "./Proficiencies";
 import Skills from "./Skills";
+import AttacksAndSpellcasting from "./AttacksAndSpellcasting";
+import Equipment from "./Equipment";
+// import ShortBio from './ShortBio'
+import Bio from "./Bio";
+import Features from "./Features";
+import Items from "./Items";
 import Spells from "./Spells";
-import VitalStats from "./VitalStats";
-
-
-
 
 function CharSheet(props) {
   return (
     <div id="CharSheet">
-    <Header {...props}/>
-    <Bio {...props} />
+      <Header {...props} />
+      {/* <BriefSummary {...props} /> */}
+      <div id="CharSheet-main">
+        <div className="column">
+          <Abilities {...props} />
+          <Skills {...props} />
+        </div>
+        {/* <div className="column">
+        
+        </div>
+        <div className="column"> 
+        
+        </div> */}
+      </div>
+      <Bio {...props} />
+      <Items {...props} />
+      <Spells {...props} />
     </div>
   );
 }

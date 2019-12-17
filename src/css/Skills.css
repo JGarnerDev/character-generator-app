@@ -1,0 +1,26 @@
+#skillsSavesAndProficiencies {
+    font-size: 0.8em;
+    width: 60%;
+    min-height: 500px;
+}
+
+#proficiencyBonus-box {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
+}
+.savingThrow-box, .skill-box  {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#savingThrows-container, #skills-container {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
+}

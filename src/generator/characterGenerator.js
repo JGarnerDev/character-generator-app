@@ -33,92 +33,94 @@ function camelCase(x) {
 
 // the structure of a character
 
-let character = {
-  name: null,
-  gender: null,
-  race: null,
-  subrace: null,
-  class: null,
-  background: null,
-  personality: [],
-  languages: [],
-  proficiencyBonus: null,
-  proficiencies: {
-    primaryAbility: null,
-    savingThrows: [],
-    weapons: [],
-    armor: [],
-    skills: [],
-    tools: []
-  },
-  HP: 0,
-  hitDie: 0,
-  levels: [],
-  abilities: {
-    str: null,
-    dex: null,
-    con: null,
-    wis: null,
-    int: null,
-    cha: null
-  },
-  abilityMod: {
-    str: null,
-    dex: null,
-    con: null,
-    wis: null,
-    int: null,
-    cha: null
-  },
-  equipment: { weapons: [], armor: [], clothes: [], magicItems: [] },
-  skills: {
-    atheletics: [0, false],
-    acrobatics: [0, false],
-    sleightOfHand: [0, false],
-    stealth: [0, false],
-    arcana: [0, false],
-    history: [0, false],
-    investigation: [0, false],
-    nature: [0, false],
-    religion: [0, false],
-    animalHandling: [0, false],
-    insight: [0, false],
-    medicine: [0, false],
-    perception: [0, false],
-    survival: [0, false],
-    deception: [0, false],
-    intimidation: [0, false],
-    performance: [0, false],
-    persuasion: [0, false]
-  },
-  feats: [],
-  spellcastingLevel: 0,
-  spellsKnown: 0,
-  spellcastingAbility: 0,
-  spellAttackMod: 0,
-  spellSaveDC: 0,
-  ritualCaster: false,
-  spells: [
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []],
-    [[0], []]
-  ],
-  items: []
-};
+
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
 function makeCharacter() {
+    let character = {
+        name: null,
+        gender: null,
+        race: null,
+        subrace: null,
+        class: null,
+        background: null,
+        personality: [],
+        languages: [],
+        proficiencyBonus: null,
+        proficiencies: {
+          primaryAbility: null,
+          savingThrows: [],
+          weapons: [],
+          armor: [],
+          skills: [],
+          tools: []
+        },
+        HP: 0,
+        hitDie: 0,
+        levels: [],
+        abilities: {
+          Strength: null,
+          Dexterity: null,
+          Constitution: null,
+          Wisdom: null,
+          Intelligence: null,
+          Charisma: null
+        },
+        abilityMod: {
+          Strength: null,
+          Dexterity: null,
+          Constitution: null,
+          Wisdom: null,
+          int: null,
+          Intelligence: null
+        },
+        equipment: { weapons: [], armor: [], clothes: [], magicItems: [] },
+        skills: {
+          atheletics: [0, false],
+          acrobatics: [0, false],
+          sleightOfHand: [0, false],
+          stealth: [0, false],
+          arcana: [0, false],
+          history: [0, false],
+          investigation: [0, false],
+          nature: [0, false],
+          religion: [0, false],
+          animalHandling: [0, false],
+          insight: [0, false],
+          medicine: [0, false],
+          perception: [0, false],
+          survival: [0, false],
+          deception: [0, false],
+          intimidation: [0, false],
+          performance: [0, false],
+          persuasion: [0, false]
+        },
+        feats: [],
+        spellcastingLevel: 0,
+        spellsKnown: 0,
+        spellcastingAbility: 0,
+        spellAttackMod: 0,
+        spellSaveDC: 0,
+        ritualCaster: false,
+        spells: [
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []],
+          [[0], []]
+        ],
+        items: []
+      };
+
   // 1. Roll stats --------------------------------------------------------------------
 
-  let stats = statsRoll(2);
+  let stats = statsRoll(1);
 
   // 2. Assign class ------------------------------------------------------------------
 
@@ -239,16 +241,16 @@ function makeCharacter() {
       ability = randomFromArr(Object.keys(character.abilities));
     }
     if (ability === "all") {
-      character.abilities.str += 1;
-      character.abilities.dex += 1;
-      character.abilities.con += 1;
-      character.abilities.wis += 1;
-      character.abilities.int += 1;
-      character.abilities.cha += 1;
+      character.abilityMod.Strength += 1;
+      character.abilityMod.Dexterity += 1;
+      character.abilityMod.Constitution += 1;
+      character.abilityMod.Wisdom += 1;
+      character.abilityMod.Intelligence += 1;
+      character.abilityMod.Charisma += 1;
       break;
     }
     let modifier = Object.values(character.race.abilityMod)[i];
-    character.abilities[ability] = character.abilities[ability] + modifier;
+    character.abilityMod[ability] = character.abilityMod[ability] + modifier;
   }
 
   // Below is a bug fix - occassionally, an undefined element will populate character.languages. This removes it.
@@ -449,7 +451,6 @@ function makeCharacter() {
       }
     }
   }
-
   return character;
 }
 

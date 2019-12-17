@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../css/Header.css";
 
 export default class Header extends React.Component {
@@ -17,6 +17,7 @@ export default class Header extends React.Component {
     return (
       <div id="header">
         <div id="character-name">{this.props.character.name}</div>
+        <div id="the">the</div>
         <div id="character-description">{characterDescription}</div>
       </div>
     );}

@@ -5,9 +5,9 @@ const barbarian = {
   description:
     "A fierce warrior of primitive background who can enter a battle rage",
   hitDie: 12,
-  primaryAbility: "str",
+  primaryAbility: "Strength",
   spellcastingLevel: 0,
-  savingThrowProficiencies: ["str", "con"],
+  savingThrowProficiencies: ["Strength", "Constitution"],
   skillProficiencies: [
     2,
     "Animal Handling",
@@ -36,9 +36,9 @@ const bard = {
   name: "Bard",
   description: "An inspiring magician whose power echoes the music of creation",
   hitDie: 8,
-  primaryAbility: "cha",
+  primaryAbility: "Charisma",
   spellcastingLevel: 1,
-  savingThrowProficiencies: ["cha", "dex"],
+  savingThrowProficiencies: ["Charisma", "Dexterity"],
   skillProficiencies: [3],
   armorProficiencies: ["armor light"],
   weaponProficiencies: [
@@ -71,9 +71,9 @@ const cleric = {
   description:
     "A priestly champion who wields divine magic in service of a higher power",
   hitDie: 8,
-  primaryAbility: "wis",
+  primaryAbility: "Wisdom",
   spellcastingLevel: 1,
-  savingThrowProficiencies: ["wis", "cha"],
+  savingThrowProficiencies: ["Wisdom", "Charisma"],
   skillProficiencies: [
     2,
     "History",
@@ -114,9 +114,9 @@ const druid = {
   description:
     "A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and lightning — and adopting animal forms",
   hitDie: 8,
-  primaryAbility: "wis",
+  primaryAbility: "Wisdom",
   spellcastingLevel: 1,
-  savingThrowProficiencies: ["int", "wis"],
+  savingThrowProficiencies: ["Intelligence", "Wisdom"],
   skillProficiencies: [
     2,
     "Arcana",
@@ -157,9 +157,9 @@ const fighter = {
   description:
     "A master of martial combat, skilled with a variety of weapons and armor",
   hitDie: 10,
-  primaryAbility: ["str", "dex"], /// OR
+  primaryAbility: ["Strength", "Dexterity"], /// OR
   spellcastingLevel: 0,
-  savingThrowProficiencies: ["str", "con"],
+  savingThrowProficiencies: ["Strength", "Constitution"],
   skillProficiencies: [
     2,
     "Acrobatics",
@@ -210,9 +210,9 @@ const monk = {
   description:
     "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection",
   hitDie: 8,
-  primaryAbility: ["dex", "wis"], //// AND
+  primaryAbility: ["Dexterity", "Wisdom"], //// AND
   spellcastingLevel: 0,
-  savingThrowProficiencies: ["str", "dex"],
+  savingThrowProficiencies: ["Strength", "Dexterity"],
   skillProficiencies: [
     2,
     "Acrobatics",
@@ -240,9 +240,9 @@ const paladin = {
   name: "Paladin",
   description: "A holy warrior bound to a sacred oath",
   hitDie: 10,
-  primaryAbility: ["str", "cha"], /// AND
+  primaryAbility: ["Strength", "Charisma"], /// AND
   spellcastingLevel: 0.5,
-  savingThrowProficiencies: ["wis", "cha"],
+  savingThrowProficiencies: ["Wisdom", "Charisma"],
   skillProficiencies: [
     2,
     "Atheletics",
@@ -281,9 +281,9 @@ const ranger = {
   description:
     "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization",
   hitDie: 10,
-  primaryAbility: ["dex", "wis"], /// AND
+  primaryAbility: ["Dexterity", "Wisdom"], /// AND
   spellcastingLevel: 0.5,
-  savingThrowProficiencies: ["str", "dex"],
+  savingThrowProficiencies: ["Strength", "Dexterity"],
   skillProficiencies: [
     3,
     "Animal Handling",
@@ -316,9 +316,9 @@ const rogue = {
   description:
     "A scoundrel who uses stealth and trickery to overcome obstacles and enemies",
   hitDie: 8,
-  primaryAbility: "dex",
+  primaryAbility: "Dexterity",
   spellcastingLevel: 0,
-  savingThrowProficiencies: ["dex", "int"],
+  savingThrowProficiencies: ["Dexterity", "Intelligence"],
   skillProficiencies: [
     4,
     "Acrobatics",
@@ -369,9 +369,9 @@ const sorcerer = {
   description:
     "A spellcaster who draws on inherent magic from a gift or bloodline",
   hitDie: 6,
-  primaryAbility: "cha",
+  primaryAbility: "Charisma",
   spellcastingLevel: 1,
-  savingThrowProficiencies: ["con", "cha"],
+  savingThrowProficiencies: ["Constitution", "Charisma"],
   skillProficiencies: [
     2,
     "Arcana",
@@ -414,9 +414,9 @@ const warlock = {
   description:
     "A wielder of magic that is derived from a bargain with an extraplanar entity",
   hitDie: 8,
-  primaryAbility: "cha",
+  primaryAbility: "Charisma",
   spellcastingLevel: 0.3,
-  savingThrowProficiencies: ["wis", "cha"],
+  savingThrowProficiencies: ["Wisdom", "Charisma"],
   skillProficiencies: [
     2,
     "Arcana",
@@ -456,9 +456,9 @@ const wizard = {
   description:
     "A scholarly magic-user capable of manipulating the structures of reality",
   hitDie: 6,
-  primaryAbility: "int",
+  primaryAbility: "Intelligence",
   spellcastingLevel: 1,
-  savingThrowProficiencies: ["int", "wis"],
+  savingThrowProficiencies: ["Intelligence", "Wisdom"],
   skillProficiencies: [
     2,
     "Arcana",

@@ -18,7 +18,7 @@ function movement(base) {
 const dragonborn = {
   name: "Dragonborn",
   subraces: [{name:"Standard"}],
-  abilityMod: { str: +2, cha: +1 },
+  abilityMod: { Strength: +2, Charisma: +1 },
   movement: movement(30),
   details: {
     intro:
@@ -44,7 +44,7 @@ const dragonborn = {
 const dwarf = {
   name: "Dwarf",
   subraces: [phbSubraces.hillDwarf, phbSubraces.mountainDwarf],
-  abilityMod: { con: +2 },
+  abilityMod: { Constitution: +2 },
   movement: movement(25),
   details: {
     intro:
@@ -72,7 +72,7 @@ const dwarf = {
 const elf = {
   name: "Elf",
   subraces: [phbSubraces.highElf, phbSubraces.woodElf, phbSubraces.darkElf],
-  abilityMod: { dex: +2 },
+  abilityMod: { Dexterity: +2 },
   movement: movement(30),
   details: {
     intro:
@@ -98,7 +98,7 @@ const elf = {
 const gnome = {
   name: "Gnome",
   subraces: [phbSubraces.deepGnome, phbSubraces.rockGnome],
-  abilityMod: { int: +2 },
+  abilityMod: { Intelligence: +2 },
   movement: movement(30),
   details: {
     intro:
@@ -119,7 +119,7 @@ const gnome = {
 const halfElf = {
   name: "Half-Elf",
   subraces: [{name:"Standard"}],
-  abilityMod: { cha: +2, any: +1 },
+  abilityMod: { Charisma: +2, any: +1 },
   movement: movement(30),
   details: {
     intro:
@@ -140,7 +140,7 @@ const halfElf = {
 const halfOrc = {
   name: "Half-Orc",
   subraces: [{name:"Standard"}],
-  abilityMod: { str: +2, con: +1 },
+  abilityMod: { Strength: +2, Constitution: +1 },
   movement: movement(30),
   details: {
     intro:
@@ -166,7 +166,7 @@ const halfOrc = {
 const halfling = {
   name: "Halfling",
   subraces: [phbSubraces.lightfootHalfling, phbSubraces.stoutHalfling],
-  abilityMod: { dex: +2 },
+  abilityMod: { Dexterity: +2 },
   movement: movement(30),
   details: {
     intro:
@@ -212,7 +212,7 @@ const human = {
 const tiefling = {
   name: "Tiefling",
   subraces: [{name:"Standard"}],
-  abilityMod: { cha: +2, int: +1 },
+  abilityMod: { Charisma: +2, Intelligence: +1 },
   movement: movement(30),
   details: {
     intro:

@@ -7,17 +7,16 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      characterGenerated: false
+      characterGenerated: false,
+      character: null
     };
   }
 
-  generateCharacter = () => {
-    let newCharacter = makeCharacter();
+  handleGenerateClick = () => {
     this.setState({
       characterGenerated: true,
-      character: newCharacter
+      character: makeCharacter()
     });
-    console.log(this.state.character);
   };
 
   render() {
@@ -25,7 +24,7 @@ export default class App extends Component {
     if (isCharacterGenerated) {
       return (
         <div id="App">
-          <button id="generate-button" onClick={this.generateCharacter}>
+          <button id="generate-button" onClick={this.handleGenerateClick}>
             Generate a Character!
           </button>
           <CharSheet id="character-sheet" character={this.state.character} />
@@ -34,7 +33,7 @@ export default class App extends Component {
     } else {
       return (
         <div id="App">
-          <button id="generate-button" onClick={this.generateCharacter}>
+          <button id="generate-button" onClick={this.handleGenerateClick}>
             Generate a Character!
           </button>
         </div>
