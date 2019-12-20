@@ -3,6 +3,7 @@ let items = require("../items/itemsMain");
 
 const acolyte = {
   name: "Acolyte",
+  intro: "spent their life in the service of a temple to a specific god or pantheon of gods acting as an intermediary between the realm of the holy and the mortal world. They performed sacred rites, holy rituals, and offering sacrifices in order to conduct worshipers into the presence of the divine.", 
   details:
     "You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric—performing sacred rites is not the same thing as channeling divine power.",
   skillProficiencies: ["Insight", "Religion"],
@@ -78,6 +79,7 @@ const acolyte = {
 };
 const charlatan = {
   name: "Charlatan",
+  intro: "always had a way with people. With cunning lies, careful ploys, and intricate plans, they made a cosy living.",
   details:
     "You have always had a way with people. You know what makes them tick, you can tease out their hearts' desires after a few minutes of conversation, and with a few leading questions you can read them like they were children's books. It's a useful talent, and one that you're perfectly willing to use for your advantage. You know what people want and you deliver, or rather, you promise to deliver. Common sense should steer people away from things that sound too good to be true, but common sense seems to be in short supply when you're around. The bottle of pink colored liquid will surely cure that unseemly rash, this ointment – nothing more than a bit of fat with a sprinkle of silver dust can restore youth and vigor, and there's a bridge in the city that just happens to be for sale. These marvels sound implausible, but you make them sound like the real deal.",
   skillProficiencies: ["deception", "Sleight of Hand"],
@@ -162,6 +164,7 @@ const charlatan = {
 };
 const criminal = {
   name: "Criminal",
+  intro: "has a long history of breaking the law. Plenty of time was spent in and amongst the underbelly of cities in criminal society where they learned to hone their skills.",
   details:
     "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You’re far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society.",
   skillProficiencies: ["deception", "Stealth"],
@@ -242,6 +245,7 @@ const criminal = {
 };
 const gladiator = {
   name: "Gladiator",
+  intro: "performed in combat pits for the voracious audience of common-folk and nobility alike.",
   details:
     "A gladiator is as much an entertainer as any minstrel or circus performer trained to make the arts of combat into a spectacle the crowd can enjoy. This kind of flashy combat is your entertainer routine, though you might also have some skills as a tumbler or actor.",
   skillProficiencies: ["acrobatics", "performance"],
@@ -329,6 +333,7 @@ const gladiator = {
 };
 const entertainer = {
   name: "Entertainer",
+  intro: "made a name in performing their art for coin and fame; they thrived on moving the souls of their audience.",
   details:
     "You thrive in front of an audience. You know how to entrance them, entertain them, and even inspire them. Your poetics can stir the hearts of those who hear you, awakening grief or joy, laughter or anger. Your music raises their spirits or captures their sorrow. Your dance steps captivate, your humor cuts to the quick. Whatever techniques you use, your art is your life.",
   skillProficiencies: ["acrobatics", "performance"],
@@ -416,6 +421,7 @@ const entertainer = {
 };
 const folkHero = {
   name: "Folk Hero",
+  intro: "gained much fame having performed a heroic deed for the people they called their own.",
   details:
     "You come from a humble social rank, but you are destined for so much more. Already the people of your home village regard you as their champion, and your destiny calls you to stand against the tyrants and monsters that threaten the common folk everywhere.",
   skillProficiencies: ["animalHandling", "Survival"],
@@ -507,6 +513,7 @@ const folkHero = {
 
 const guildArtisan = {
   name: "Guild Artisan",
+  intro: "gained skill in their craft as an apprentice. They remain in contact and noteriety with fellow guild members and the guild in general.",
   details:
     "You are a member of an artisan's guild, skilled in a particular field and closely associated with other artisans. You are a well-established part of the mercantile world, freed by talent and wealth from the constraints of a feudal social order. You learned your skills as an apprentice to a master artisan, under the sponsorship of your guild, until you became a master in your own right.",
   skillProficiencies: ["Insight", "Persuasion"],
@@ -597,6 +604,7 @@ const guildArtisan = {
 };
 const guildMerchant = {
   name: "Guild Merchant",
+  intro: "was a part of a great organism of trade. They spent their earlier years learning the logistical, enconomical, and political sphere of merchantilism.",
   details:
     "Instead of an artisans' guild, you might belong to a guild of traders, caravan masters, or shopkeepers. You don't craft items yourself but earn a living by buying and selling the works of others (or the raw materials artisans need to practice their craft). Your guild might be a large merchant consortium (or family) with interests across the region. Perhaps you transported goods from one place to another, by ship, wagon, or caravan, or bought them from traveling traders and sold them in your own little shop. In some ways, the traveling merchant's life lends itself to adventure far more than the life of an artisan.",
   skillProficiencies: ["Insight", "Persuasion"],
@@ -669,6 +677,7 @@ const guildMerchant = {
 };
 const hermit = {
   name: "Hermit",
+  intro: "lived in seclusion. For years, they spent time in the wilds, far from society and the mechanisms of civilization.",
   details:
     "You lived in seclusion – either in a sheltered community such as a monastery, or entirely alone – for a formative part of your life. In your time apart from the clamor of society, you found quiet, solitude, and perhaps some of the answers you were looking for.",
   skillProficiencies: ["Medicine", "Religion"],
@@ -755,6 +764,7 @@ const hermit = {
 
 const knight = {
   name: "Knight",
+  intro: "served as a military and political extension of a noble house where they learned what it means to to serve, protect, and rule.",
   details:
     "A knighthood is among the lowest noble titles in most societies, but it can be a path to higher status. One of your commoner retainers is replaced by a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood. Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on). As an emblem of chivalry and the ideals of courtly love, you might include among your equipment a banner or other token from a noble lord or lady to whom you have given your heart — in a chaste sort of devotion. This person could be your bond.",
   skillProficiencies: ["History", "Persuasion"],
@@ -826,6 +836,7 @@ const knight = {
 };
 const noble = {
   name: "Noble",
+  intro: "was born into a royal family where they lived a life of privelege and wealth. They became learned in rulership and the values of the upper-class.",
   details:
     "You understand wealth, power, and privilege. You carry a noble title, and your family owns land, collects taxes, and wields significant political influence. You might be a pampered aristocrat unfamiliar with work or discomfort, a former merchant just elevated to the nobility, or a disinherited scoundrel with a disproportionate sense of entitlement. Or you could be an honest, hard-working landowner who cares deeply about the people who live and work on your land, keenly aware of your responsibility to them.",
   skillProficiencies: ["History", "Persuasion"],
@@ -896,6 +907,7 @@ const noble = {
 };
 const outlander = {
   name: "Outlander",
+  intro: "grew up in the wilds, far from civilization and the comforts of town and technology. They learned quickly how to survive amongst the beasts and the trees.",
   details:
     "You grew up in the wilds, far from civilization and the comforts of town and technology. You've witnessed the migration of herds larger than forests, survived weather more extreme than any city-dweller could comprehend, and enjoyed the solitude of being the only thinking creature for miles in any direction. The wilds are in your blood, whether you were a nomad, an explorer, a recluse, a hunter-gatherer, or even a marauder. Even in places where you don't know the specific features of the terrain, you know the ways of the wild.",
   skillProficiencies: ["Atheletics", "Survival"],
@@ -975,6 +987,7 @@ const outlander = {
 
 const sage = {
   name: "Sage",
+  intro: "grew up being student of a great master of a study. They learned much about the lore of the multiverse.",
   details:
     "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in your fields of study.",
   skillProficiencies: ["Arcana", "History"],
@@ -1055,6 +1068,7 @@ const sage = {
 };
 const pirate = {
   name: "Pirate",
+  intro: "and spent their earlier years roaming and pillaging the seas with their captain and crew.",
   details:
     "You spent your youth under the sway of a dread pirate, a ruthless cutthroat who taught you how to survive in a world of sharks and savages. You've indulged in larceny on the high seas and sent more than one deserving soul to a briny grave. Fear and bloodshed are no strangers to you, and you've garnered a somewhat unsavory reputation in many a port town.",
   skillProficiencies: ["Atheletics", "Perception"],
@@ -1130,6 +1144,7 @@ const pirate = {
 };
 const sailor = {
   name: "Sailor",
+  intro: "and had many years afloat on several ships. In their love and struggle with the mighty seas, they became strong and sharp.",
   details:
     "You sailed on a seagoing vessel for years. In that time, you faced down mighty storms, monsters of the deep, and those who wanted to sink your craft to the bottomless depths. Your first love is the distant line of the horizon, but the time has come to try your hand at something new.",
   skillProficiencies: ["Atheletics", "Perception"],
@@ -1205,6 +1220,7 @@ const sailor = {
 };
 const soldier = {
   name: "Soldier",
+  intro: "and war has been their life for as long as they care to remember. They became hard, disciplined, and fearsome as they participated in many battles as part of a greater unit.",
   details:
     "War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniques, including how to stay alive on the battlefield. You might have been part of a standing national army or a mercenary company, or perhaps a member of a local militia who rose to prominence during a recent war.",
   skillProficiencies: ["Atheletics", "Intimidation"],
@@ -1285,8 +1301,9 @@ const soldier = {
 };
 const urchin = {
   name: "Urchin",
+  intro: "grew up on the streets alone, orphaned, and poor. They learned much in the forced necessities of thievery and self-reliance.",
   details:
-    "You grew up on the streets alone, orphaned, and poor, You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You've survived despite all odds, and did so through cunning, strength, speed, or some combination of each. You begin your adventuring career with enough money to live modestly but securely for at least ten days. How did you come by that money? What allowed you to break free of your desperate circumstances and embark on a better life?",
+    "You grew up on the streets alone, orphaned, and poor. You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You've survived despite all odds, and did so through cunning, strength, speed, or some combination of each. You begin your adventuring career with enough money to live modestly but securely for at least ten days. How did you come by that money? What allowed you to break free of your desperate circumstances and embark on a better life?",
   skillProficiencies: ["Sleight of Hand", "Stealth"],
   toolProficiencies: [
     toolProficiencies.disguiseKit,

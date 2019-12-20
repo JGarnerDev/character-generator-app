@@ -17,7 +17,7 @@ function movement(base) {
 
 const dragonborn = {
   name: "Dragonborn",
-  subraces: [{name:"Standard"}],
+  subraces: [{name:"Dragonborn"}],
   abilityMod: { Strength: +2, Charisma: +1 },
   movement: movement(30),
   details: {
@@ -118,7 +118,7 @@ const gnome = {
 };
 const halfElf = {
   name: "Half-Elf",
-  subraces: [{name:"Standard"}],
+  subraces: [{name:"Half-Elf"}],
   abilityMod: { Charisma: +2, any: +1 },
   movement: movement(30),
   details: {
@@ -139,7 +139,7 @@ const halfElf = {
 };
 const halfOrc = {
   name: "Half-Orc",
-  subraces: [{name:"Standard"}],
+  subraces: [{name:"Half-Orc"}],
   abilityMod: { Strength: +2, Constitution: +1 },
   movement: movement(30),
   details: {
@@ -190,7 +190,7 @@ const halfling = {
 };
 const human = {
   name: "Human",
-  subraces: [{name:"Standard"},phbSubraces.humanVariant],
+  subraces: [{name:"Human"},phbSubraces.humanVariant],
   abilityMod: { all: +1 },
   movement: movement(30),
   details: {
@@ -211,7 +211,7 @@ const human = {
 };
 const tiefling = {
   name: "Tiefling",
-  subraces: [{name:"Standard"}],
+  subraces: [{name:"Tiefling"}],
   abilityMod: { Charisma: +2, Intelligence: +1 },
   movement: movement(30),
   details: {

@@ -24,18 +24,40 @@ export default class App extends Component {
     if (isCharacterGenerated) {
       return (
         <div id="App">
-          <button id="generate-button" onClick={this.handleGenerateClick}>
-            Generate a Character!
-          </button>
+          <div className="header">
+            <button
+            className="generate-button"
+              id="generate-button-after"
+              onClick={this.handleGenerateClick}
+            >
+              Generate a Character!
+            </button>
+            <div id="character-title">
+              <div id="character-title-name">{this.state.character.name}</div>
+              
+              <div id="character-title-desc">
+              <div id="the">the</div>
+                {this.state.character.subrace.name}{" "}
+                {this.state.character.class.name}
+              </div>
+              <div></div>
+            </div>
+          </div>
           <CharSheet id="character-sheet" character={this.state.character} />
         </div>
       );
     } else {
       return (
         <div id="App">
-          <button id="generate-button" onClick={this.handleGenerateClick}>
-            Generate a Character!
-          </button>
+          <div className="header">
+            <button
+            className="generate-button"
+              id="generate-button-before"
+              onClick={this.handleGenerateClick}
+            >
+              Generate a Character!
+            </button>
+          </div>
         </div>
       );
     }

@@ -84,7 +84,7 @@ const stoutHalfling = {
   racialFeatures: [racialFeatures.stoutResilience]
 };
 const humanVariant = {
-  name: "Variant",
+  name: "Human",
   desc:
     "If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.",
   abilityMod: { any2Stats: +1 },

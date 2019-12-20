@@ -1,31 +1,53 @@
 #CharSheet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
+  height: 255vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5vh;
 }
 
-#CharSheet-main{
-    display: flex;
-    margin-top: 2%;
-    height:auto;
-    width: 90%;
-    max-width: 600px;
-    flex-wrap: wrap;
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 82vh;
+  width: 100%;
+  background-color: lightblue;
+  animation: appear 0.5s 1.5s both;
 }
 
-.column{
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
-    height: auto;
-    width: 100%;
-    
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
-.characterSheet-title-small {
-    font-weight: bolder;
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 33%;
+  background-color: lightgrey;
+}
+
+#first-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#summary{
     text-align: center;
-    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
+    margin: 2%;
+    font-size: 80%;
+    font-style: italic;
 }
