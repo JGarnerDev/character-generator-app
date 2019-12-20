@@ -1,8 +1,6 @@
 import React from "react";
 import "../css/CharSheet.css";
 
-import Header from "./Header";
-import BriefSummary from "./BriefSummary";
 import Abilities from "./Abilities";
 import Proficiencies from "./Proficiencies";
 import Skills from "./Skills";
@@ -29,7 +27,7 @@ function CharSheet(props) {
       <div id="first-page" className="page">
         <div id="summary">{characterSummary}</div>
         <div className="column-container">
-          <div className="column"></div>
+          <div className="column"><Abilities {...props}/><Skills {...props}/></div>
           <div className="column"></div>
           <div className="column"></div>
         </div>

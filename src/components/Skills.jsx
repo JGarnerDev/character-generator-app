@@ -5,12 +5,17 @@ function abilityModCalculator(abilityValue) {
   return Math.floor((abilityValue - 10) / 2);
 }
 
-function proficiency(character, abilityName) {
-  if (
-    character.proficiencies.savingThrows.find(function(ability) {
-      return ability === abilityName;
-    }) !== undefined
-  ) {
+function savingThrowProficiency(character, abilityName) {
+  let proficiencies = character.proficiencies.savingThrows;
+  if (proficiencies.find(ability => ability === abilityName) !== undefined) {
+    return character.proficiencyBonus;
+  } else {
+    return 0;
+  }
+}
+function skillProficiency(character, skillName) {
+  let proficiencies = character.proficiencies.skills;
+  if (proficiencies.find(skill => skill === skillName) !== undefined) {
     return character.proficiencyBonus;
   } else {
     return 0;
@@ -21,129 +26,130 @@ function Skills(props) {
   return (
     <div id="skillsSavesAndProficiencies">
       <div id="proficiencyBonus-box">
-        <div id="proficiencyBonus-title">Proficiency bonus:</div>
-        <div id="proficiencyBonus-value">
-          {props.character.proficiencyBonus}
+        <div className="skillsSavesAndProficiencies-title">
+          Proficiency bonus:
         </div>
+        <div id="proficiencyBonus-value"></div>
       </div>
       <div id="savingThrows-container">
-      <div className="characterSheet-title-small">Saving Throws</div>
+        <div className="skillsSavesAndProficiencies-title">Saving Throws</div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Strength</div>
+          <div className="savingThrow-header">Strength</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Strength") +
+            {savingThrowProficiency(props.character, "Strength") +
               abilityModCalculator(props.character.abilities.Strength)}
           </div>
         </div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Dexterity</div>
+          <div className="savingThrow-header">Dexterity</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Dexterirty") +
+            {savingThrowProficiency(props.character, "Dexterirty") +
               abilityModCalculator(props.character.abilities.Dexterity)}
           </div>
         </div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Constitution</div>
+          <div className="savingThrow-header">Constitution</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Constitution") +
+            {savingThrowProficiency(props.character, "Constitution") +
               abilityModCalculator(props.character.abilities.Constitution)}
           </div>
         </div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Wisdom</div>
+          <div className="savingThrow-header">Wisdom</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Wisdom") +
+            {savingThrowProficiency(props.character, "Wisdom") +
               abilityModCalculator(props.character.abilities.Wisdom)}
           </div>
         </div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Intelligence</div>
+          <div className="savingThrow-header">Intelligence</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Intelligence") +
+            {savingThrowProficiency(props.character, "Intelligence") +
               abilityModCalculator(props.character.abilities.Intelligence)}
           </div>
         </div>
         <div className="savingThrow-box">
-          <div className="savingThrow-title">Charisma</div>
+          <div className="savingThrow-header">Charisma</div>
           <div className="savingThrow-value">
-            {proficiency(props.character, "Charisma") +
+            {savingThrowProficiency(props.character, "Charisma") +
               abilityModCalculator(props.character.abilities.Charisma)}
           </div>
         </div>
       </div>
       <div id="skills-container">
-      <div className="characterSheet-title-small">Skills</div>
+        <div className="skillsSavesAndProficiencies-title">Skills</div>
         <div className="skill-box">
-          <div className="skill-title">Acrobatics</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Acrobatics</div>
+          <div className="skill-value">{skillProficiency(props.character, "Dexterity") +
+              abilityModCalculator(props.character.abilities.Dexterity)}</div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Animal Handling </div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Animal Handling </div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Arcana</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Arcana</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Athletics</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Athletics</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Deception</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Deception</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">History</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">History</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Insight</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Insight</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Intimidation</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Intimidation</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Investigation</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Investigation</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Medicine</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Medicine</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Nature</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Nature</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Perception</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Perception</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Performance</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Performance</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Persuasion</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Persuasion</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Religion</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Religion</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Sleight of Hand</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Sleight of Hand</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Stealth</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Stealth</div>
+          <div className="skill-value"></div>
         </div>
         <div className="skill-box">
-          <div className="skill-title">Survival</div>
-          <div className="skill-value">{props.character.proficiencyBonus}</div>
+          <div className="skill">Survival</div>
+          <div className="skill-value"></div>
         </div>
       </div>
     </div>
