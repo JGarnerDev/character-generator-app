@@ -68,12 +68,12 @@ function makeCharacter() {
           Charisma: null
         },
         abilityMod: {
-          Strength: null,
-          Dexterity: null,
-          Constitution: null,
-          Wisdom: null,
-          int: null,
-          Intelligence: null
+          Strength: 0,
+          Dexterity: 0,
+          Constitution: 0,
+          Wisdom: 0,
+          Intelligence: 0,
+          Charisma: 0
         },
         equipment: { weapons: [], armor: [], clothes: [], magicItems: [] },
         skills: {
@@ -241,16 +241,23 @@ function makeCharacter() {
       ability = randomFromArr(Object.keys(character.abilities));
     }
     if (ability === "all") {
-      character.abilityMod.Strength += 1;
-      character.abilityMod.Dexterity += 1;
-      character.abilityMod.Constitution += 1;
-      character.abilityMod.Wisdom += 1;
-      character.abilityMod.Intelligence += 1;
-      character.abilityMod.Charisma += 1;
+      character.abilities.Strength += 1;
+      character.abilities.Dexterity += 1;
+      character.abilities.Constitution += 1;
+      character.abilities.Wisdom += 1;
+      character.abilities.Intelligence += 1;
+      character.abilities.Charisma += 1;
       break;
     }
     let modifier = Object.values(character.race.abilityMod)[i];
-    character.abilityMod[ability] = character.abilityMod[ability] + modifier;
+    character.abilities[ability] = character.abilities[ability] + modifier;
+  }
+
+  for (let i = 0; i < Object.values(character.abilityMod).length; i++) {
+      let ability = Object.keys(character.abilities)[i]
+      let abilityValue =  Object.values(character.abilities)[i]
+    character.abilityMod[ability] = Math.floor(((abilityValue - 10)/2))
+      
   }
 
   // Below is a bug fix - occassionally, an undefined element will populate character.languages. This removes it.

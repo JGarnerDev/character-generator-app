@@ -1,18 +1,11 @@
-#abilities {
-    width: 40%;
-    margin: 2%;
+#Abilities {
 }
 
-.ability-box {
-    height: auto;
-   text-align: center;
+.ability-row {
+    
 }
-
-.ability-box-header {
-    margin: 0;
-    font-size:calc(0.7vh + 1vw);
-    font-weight: bold;
-}
-.ability-box-value {
-    font-size: calc(4vh + 1vw);
-}
+.ability-header {}
+.ability-value {}
+.proficiencyBonus {}
+.proficiencyBonus-header {}
+.proficiencyBonus-value {}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CharSheet from "./CharSheet";
 import makeCharacter from "../generator/characterGenerator";
+import resources from "../generator/resourceAssembler";
 import "../css/App.css";
 
 export default class App extends Component {
@@ -8,7 +9,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       characterGenerated: false,
-      character: null
+      character: null,
+      resources: resources
     };
   }
 
@@ -43,7 +45,7 @@ export default class App extends Component {
               <div></div>
             </div>
           </div>
-          <CharSheet id="character-sheet" character={this.state.character} />
+          <CharSheet id="character-sheet" character={this.state.character} resources={this.state.resources} />
         </div>
       );
     } else {

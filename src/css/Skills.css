@@ -1,40 +1,7 @@
-#skillsSavesAndProficiencies {
-    width: 50%;
-    margin: 2%;
-    font-size: calc(0.5vh + 1vw);
+#Skills{
 }
-
-.skillsSavesAndProficiencies-title {
-    font-weight: bold;
-}
-
-
-
-#proficiencyBonus-box {
-    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
-}
-
-#proficiencyBonus-value {
-    margin-right: 2%;
-}
-
-#savingThrows-container, #skills-container {
-    
-    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
-}
-
-.savingThrow-box, .skill-box  {
-    height: auto;
-    display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    justify-content: space-between;
-}
-.skill, .skill-value, .savingThrow-header, .savingThrow-value {
-   
-
-}
+#skills-headers{}
+.skills-header{}
+.butt{}
+.butt{}
+.butt{}

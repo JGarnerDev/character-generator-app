@@ -12,7 +12,7 @@ function padded(x) {
     cost: 5 * q,
     ac: [11, 0],
     reqStr: 0,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 8 * q
   };
 }
@@ -88,7 +88,7 @@ function chainShirt(x) {
     cost: 50 * q,
     ac: [13, 2],
     reqStr: 0,
-    stealth: true,
+    stealth: " ",
     weight: 20 * q
   };
 }
@@ -107,7 +107,7 @@ function scaleMail(x) {
     cost: 50 * q,
     ac: [14, 2],
     reqStr: 0,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 45 * q
   };
 }
@@ -145,7 +145,7 @@ function halfPlate(x) {
     cost: 750 * q,
     ac: [15, 2],
     reqStr: 0,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 40 * q
   };
 }
@@ -164,7 +164,7 @@ function ringMail(x) {
     cost: 30 * q,
     ac: [14],
     reqStr: 0,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 40 * q
   };
 }
@@ -183,7 +183,7 @@ function chainMail(x) {
     cost: 75 * q,
     ac: [16],
     reqStr: 13,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 55 * q
   };
 }
@@ -202,7 +202,7 @@ function splint(x) {
     cost: 200 * q,
     ac: [17],
     reqStr: 15,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 60 * q
   };
 }
@@ -221,7 +221,7 @@ function plate(x) {
     cost: 1500 * q,
     ac: [18],
     reqStr: 15,
-    stealth: [false, "Disadvantage"],
+    stealth: "Disadvantage",
     weight: 65 * q
   };
 }

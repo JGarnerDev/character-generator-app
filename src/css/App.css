@@ -35,8 +35,8 @@
 
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translateX(190px);
-    transform: translateX(190px);
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -45,8 +45,8 @@
 }
 @keyframes slide {
   0% {
-    -webkit-transform: translateX(190px);
-    transform: translateX(190px);
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
   }
   100% {
     -webkit-transform: translateX(0);
