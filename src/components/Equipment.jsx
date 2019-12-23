@@ -84,11 +84,11 @@ export default class Equipment extends React.Component {
 
   render() {
     return (
-      <div>
+    
         <table className="table" id="Equipment">
           {this.createEquipmentTable()}
         </table>
-      </div>
+     
     );
   }
 }

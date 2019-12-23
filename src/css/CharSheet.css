@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  height: 82vh;
+  height: auto;
   max-height: auto;
   width: 100%;
   background-color: lightblue;
@@ -37,7 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0.5%;
-  height: 99%;
+  height: auto;
   width: 33%;
   flex-grow: 1;
   background-color: lightgrey;
@@ -70,7 +70,7 @@ tr {
 
 th {
   border: black 1px solid;
-  flex-grow: 1;
+  font-weight: bold;
 }
 
 td {

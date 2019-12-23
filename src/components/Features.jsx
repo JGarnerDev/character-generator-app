@@ -28,8 +28,8 @@ export default class Features extends React.Component {
       if (typeof featuresArr[i] === "object") {
         features.push(
           <div>
-            <h3>{featuresArr[i].name}</h3>
-            <div>{featuresArr[i].desc}</div>
+            <h3 className="feature-header">{featuresArr[i].name}</h3>
+            <p className="feature-paragraph">{featuresArr[i].desc}</p>
           </div>
         );
       }
