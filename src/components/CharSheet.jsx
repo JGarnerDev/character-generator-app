@@ -31,6 +31,7 @@ function CharSheet(props) {
           </div>
           <div className="column">
             <Equipment {...props} />
+            <Items {...props} />
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@ function CharSheet(props) {
           <Features {...props} />
         </div>
         <div className="column">
-          <Items {...props} />
+          
         </div>
       </div>
       <div id="third-page" className="page">

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
   text-align: center;
-  height:60%;
+  height:30em;
   width: 100%;
   padding-top: 3%;
  padding-bottom:5%
@@ -37,6 +37,7 @@
 .weapons-table-value {
   display: flexbox;
   font-size: 0.6em;
+  max-width: 30px;
   
 flex-grow: 1;
   border: 1px black solid;

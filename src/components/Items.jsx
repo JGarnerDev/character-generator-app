@@ -9,17 +9,17 @@ export default class Items extends React.Component {
   createItemsTable = () => {
     let table = [];
     table.push(
-      <tr id="items-headers">
-        <th id="items-header-Item">Item</th>
-        <th id="items-header-#">#</th>
-        <th id="items-header-Value">Value</th>
-        <th id="items-header-Weight">Weight</th>
+      <tr className="items-table-row">
+        <th className="items-table-header">Item</th>
+        <th className="items-table-header">#</th>
+        <th className="items-table-header">Value</th>
+        <th className="items-table-header">Weight</th>
       </tr>
     );
 
     let characterItems = this.props.character.items;
-    let netWorth = 0
-    let netWeight = 0
+    let netWorth = 0;
+    let netWeight = 0;
 
     for (let i = 0; i < characterItems.length; i++) {
       let children = [];
@@ -28,34 +28,40 @@ export default class Items extends React.Component {
       let itemValue = characterItems[i].value;
       let itemWeight = characterItems[i].weight;
 
-      netWorth += itemValue
-      netWeight += itemWeight
+      netWorth += itemValue;
+      netWeight += itemWeight;
 
       children.push(
-        <tr className="item">
-          <td className="item-name">{itemName}</td>
-          <td className="item-value">{itemQuantity}</td>
-          <td className="item-value">{itemValue}</td>
-          <td className="item-value">{itemWeight}</td>
+        <tr className="items-table-row">
+          <td className="items-table-value" id="item-name">{itemName}</td>
+          <td className="items-table-value">{itemQuantity}</td>
+          <td className="items-table-value">{itemValue}</td>
+          <td className="items-table-value">{itemWeight}</td>
         </tr>
       );
 
       table.push(children);
-
     }
     table.push(
-        <tr id="items-netValues">
-          <td></td>
-          <td></td>
-          <td className="item-value">{netWorth}</td>
-          <td className="item-value">{netWeight}</td>
-        </tr>
-      );
+      <tr className="items-table-row">
+        <td className="items-table-value"></td>
+        <td className="items-table-value"></td>
+        <td className="items-table-value">Net value:{netWorth}</td>
+        <td className="items-table-value">Net weight:{netWeight}</td>
+      </tr>
+    );
 
     return table;
   };
 
   render() {
-    return <table className="table" id="Items">{this.createItemsTable()}</table>;
+    return (
+      <div className="table" id="Items">
+        <h3 id="items-header">Inventory</h3>
+        <table  id="Items-table">
+          {this.createItemsTable()}
+        </table>{" "}
+      </div>
+    );
   }
 }

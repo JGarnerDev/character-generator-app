@@ -9,16 +9,16 @@
 }
 
 #first-page {
-    min-height: 80vh;
+    min-height: 120vh;
 }
 #second-page {
-    min-height: 100vh;
+    min-height: 120vh;
 }
 #third-page {
-    min-height: 100vh;
+    min-height: 120vh;
 }
 #forth-page {
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .page {
