@@ -1,11 +1,12 @@
-#Abilities {
-}
+#Abilities {}
 
 .ability-row {
-    
+   
 }
-.ability-header {}
-.ability-value {}
-.proficiencyBonus {}
-.proficiencyBonus-header {}
-.proficiencyBonus-value {}
+.ability-header, .proficiencyBonus-header {
+    border: 1px black solid;
+}
+.ability-value, .proficiencyBonus-value {
+    border: 1px black solid;
+}
+

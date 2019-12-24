@@ -26,7 +26,7 @@ export default class App extends Component {
     if (isCharacterGenerated) {
       return (
         <div id="App">
-          <div className="header">
+          <div id="header">
             <button
             className="generate-button"
               id="generate-button-after"
@@ -51,7 +51,7 @@ export default class App extends Component {
     } else {
       return (
         <div id="App">
-          <div className="header">
+          <div id="header">
             <button
             className="generate-button"
               id="generate-button-before"

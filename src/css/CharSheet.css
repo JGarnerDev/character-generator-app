@@ -1,22 +1,35 @@
 #CharSheet {
-  height: 255vh;
+  height: auto;
   width: 90vw;
+  margin:0%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 5vh;
+}
+
+#first-page {
+    min-height: 80vh;
+}
+#second-page {
+    min-height: 100vh;
+}
+#third-page {
+    min-height: 100vh;
+}
+#forth-page {
+    min-height: 100vh;
 }
 
 .page {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
   height: auto;
-  max-height: auto;
   width: 100%;
+  margin-bottom: 2%;
   background-color: lightblue;
   animation: appear 0.5s 1.5s both;
 }
+
 
 @keyframes appear {
   0% {
@@ -41,6 +54,7 @@
   width: 33%;
   flex-grow: 1;
   background-color: lightgrey;
+  
 }
 
 #first-page {
@@ -51,30 +65,22 @@
 #summary {
   text-align: center;
   margin: 2%;
-  font-size: 80%;
+  font-size: 0.75em;
   font-style: italic;
-  flex-grow: 1;
+  min-height: 50px;
+  max-height:50px;
 }
 
 table {
-  flex-grow: 1;
-  margin: 2%;
-  border: black 1px solid;
+    font-size: calc(0.5vh + 0.5vw);
+    margin: 1%;
+    flex-grow: 1;
 }
 
-tr {
-  border: black 1px solid;
-  flex-grow: 1;
-  font-size: calc(0.1vh + 01vw);
+.table {
+    font-size: calc(0.5vh + 0.5vw);
+    margin: 1%;
+    flex-grow: 1;
+    border: 1px black solid;
 }
 
-th {
-  border: black 1px solid;
-  font-weight: bold;
-}
-
-td {
-  border: black 1px solid;
-  text-align: center;
-  flex-grow: 1;
-}

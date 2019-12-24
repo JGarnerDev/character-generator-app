@@ -25,15 +25,6 @@ export default class Abilities extends React.Component {
       table.push(children);
     }
 
-    table.push(
-      <tr className="proficiencyBonus">
-        <th className="proficiencyBonus-header">Proficiency Bonus</th>
-        <td className="proficiencyBonus-value">
-          {this.props.character.proficiencyBonus}
-        </td>
-      </tr>
-    );
-
     return table;
   };
 

@@ -11,14 +11,14 @@ import Spells from "./Spells";
 
 function CharSheet(props) {
   const characterSummary =
-    props.character.name.split(" ")[0] +
+    <p>{props.character.name.split(" ")[0] +
     " was once a " +
     props.character.background.name.toLowerCase() +
     ", and " +
     props.character.background.intro +
     " But now that adventure calls, they have found that they can answer as a mighty " +
     props.character.class.name.toLowerCase() +
-    ".";
+    "."}</p>
 
   return (
     <div id="CharSheet">

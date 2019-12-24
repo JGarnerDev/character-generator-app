@@ -6,7 +6,12 @@
   align-items: center;
 }
 
-.header {
+#header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

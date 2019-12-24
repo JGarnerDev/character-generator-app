@@ -37,11 +37,11 @@ export default class Skills extends React.Component {
         characterSkillValues[i][0] + proficiencyBonus + abilityModifier;
 
       children.push(
-        <tr className="skill">
+        <tr className="skill-row">
           <td className="skill-name">{this.reverseCamelCase(characterSkillNames[i])}</td>
-          <td className="skill-value">{skillValue}</td>
-          <td className="skill-value">{abilityModifier}</td>
-          <td className="skill-value">{proficiencyBonus}</td>
+          <td className="skill-value-total">{skillValue}</td>
+          <td className="skill-value-abilityMod">{abilityModifier}</td>
+          <td className="skill-value-proficiencyBonus">{proficiencyBonus}</td>
         </tr>
       );
 

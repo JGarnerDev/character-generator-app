@@ -17,7 +17,7 @@ export default class Features extends React.Component {
         featuresArr.push(feature);
       });
     }
-    if (Array.isArray(characterSubRacialFeatures) === true ) {
+    if (Array.isArray(characterSubRacialFeatures) === true) {
       characterSubRacialFeatures.forEach(feature => {
         featuresArr.push(feature);
       });
@@ -27,7 +27,7 @@ export default class Features extends React.Component {
     for (let i = 0; i < featuresArr.length; i++) {
       if (typeof featuresArr[i] === "object") {
         features.push(
-          <div>
+          <div className="feature">
             <h3 className="feature-header">{featuresArr[i].name}</h3>
             <p className="feature-paragraph">{featuresArr[i].desc}</p>
           </div>
@@ -38,6 +38,6 @@ export default class Features extends React.Component {
   };
 
   render() {
-    return <div className="table" id="Features">{this.characterFeatures()}</div>;
+    return <div id="Features">{this.characterFeatures()}</div>;
   }
 }

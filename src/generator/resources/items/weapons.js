@@ -143,7 +143,7 @@ function mace(x) {
     value: 5 * q,
     damage: [1, 6, "bludgeoning"],
     weight: 4 * q,
-    properties: []
+    properties: [{name:"None"}]
   };
 }
 function quarterstaff(x) {
@@ -507,7 +507,7 @@ function warPick(x) {
     q = x;
   }
   return {
-    name: "War Pick quantity: q,",
+    name: "War Pick",
     type: "Martial melee",
     value: 5 * q,
     damage: [1, 8, "bludgeoning"],

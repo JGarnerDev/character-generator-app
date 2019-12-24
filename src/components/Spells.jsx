@@ -69,12 +69,11 @@ export default class Spells extends React.Component {
 
   render() {
     return (
-      <table className="table" id="Spells">
-        <tr id="spells-header">
-          <th id="spells-header-title">Spells</th>
-        </tr>
+        <div id="Spells">
+        <h3 id="spells-title">Spells</h3>
+      <table className="table" >
         {this.createSpellsTable()}
-      </table>
+      </table></div>
     );
   }
 }
