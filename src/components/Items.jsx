@@ -58,7 +58,7 @@ export default class Items extends React.Component {
     return (
       <div className="table" id="Items">
         <h3 id="items-header">Inventory</h3>
-        <table  id="Items-table">
+        <table  id="items-table">
           {this.createItemsTable()}
         </table>{" "}
       </div>

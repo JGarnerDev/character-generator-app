@@ -1,12 +1,16 @@
-#Abilities {}
+#Abilities {
+}
 
 .ability-row {
-   
+   text-align: center;
 }
 .ability-header, .proficiencyBonus-header {
+    font-size: 1.1em;
     border: 1px black solid;
 }
 .ability-value, .proficiencyBonus-value {
+    font-size: 2em;
+    font-weight: bold;
     border: 1px black solid;
 }
 
