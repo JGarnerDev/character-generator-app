@@ -1,16 +1,13 @@
 #Equipment {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
   text-align: center;
-  height:30em;
+  height:30%;
   width: 100%;
-  padding-top: 3%;
- padding-bottom:5%
+ 
 }
 
 .equipment-table {
-  display: flexbox;
   width: 95%;
 }
 

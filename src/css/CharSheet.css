@@ -50,7 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0.5%;
-  height: auto;
+  height: 85vh;
   width: 33%;
   flex-grow: 1;
   background-color: lightgrey;
