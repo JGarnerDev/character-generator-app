@@ -27,25 +27,26 @@ export default class App extends Component {
       return (
         <div id="App">
           <div id="header">
+            <div id="character-title">
+              <div id="character-title-name">{this.state.character.name}</div>
+              <div id="the">the</div>
+              <div id="character-title-desc">
+                {this.state.character.subrace.name}{" "}
+                {this.state.character.class.name}
+              </div>
+            </div>
             <button
-            className="generate-button"
+              className="generate-button"
               id="generate-button-after"
               onClick={this.handleGenerateClick}
             >
               Generate a Character!
             </button>
-            <div id="character-title">
-              <div id="character-title-name">{this.state.character.name}</div>
-              
-              <div id="character-title-desc">
-              <div id="the">the</div>
-                {this.state.character.subrace.name}{" "}
-                {this.state.character.class.name}
-              </div>
-              <div></div>
-            </div>
           </div>
-          <CharSheet id="character-sheet" character={this.state.character} resources={this.state.resources} />
+          <CharSheet
+            character={this.state.character}
+            resources={this.state.resources}
+          />
         </div>
       );
     } else {
@@ -53,7 +54,7 @@ export default class App extends Component {
         <div id="App">
           <div id="header">
             <button
-            className="generate-button"
+              className="generate-button"
               id="generate-button-before"
               onClick={this.handleGenerateClick}
             >

@@ -29,6 +29,6 @@ export default class Abilities extends React.Component {
   };
 
   render() {
-    return <table className="table" id="Abilities">{this.createAbilitesTable()}</table>;
+    return <table id="Abilities">{this.createAbilitesTable()}</table>;
   }
 }

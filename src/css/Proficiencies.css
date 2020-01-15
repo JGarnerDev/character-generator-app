@@ -1,3 +1,33 @@
 #Proficiencies {
-    font-size: 0.8em
+    text-align: center;
+    flex-grow: 1;
+    border: 1px black solid;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#proficiencies-header {
+   margin: 0%;
+}
+
+#proficiencies-list {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  height: 16vh;
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.proficiency {
+font-size: calc(0.9em + 0.1vh);
+    width: 25%;
+    margin: 0.2%;
+    margin-left: 1%;
+    margin-right: 10%;
 }

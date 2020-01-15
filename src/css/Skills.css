@@ -1,26 +1,23 @@
-#Skills {}
-#skills-headers {
+#Skills {
+   
+    flex-grow: 1;
     border: 1px black solid;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    font-size: calc(0.85vh + 0.05vw);
 }
-.skills-header {
-    border: 1px black solid;
+
+#skills-table {
+    width: 100%;
 }
-.skill-row {}
 
 .skill-name {
-  font-size: 0.9em;
-  font-weight: bold;
-  border: 1px black solid;
+    font-size: 1.25em;
 }
 
-.skill-value-total {
-  font-size: 1.7em;
-  font-weight: bold;
-  border: 1px black solid;
-}
-.skill-value-abilityMod {
-    border: 1px black solid;
-}
-.skill-value-proficiencyBonus {
-    border: 1px black solid;
+.skill-value {
+    text-align: center;
+    font-size: 1.25em;
 }

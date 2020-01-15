@@ -77,7 +77,7 @@ function greatClub(x) {
     q = x;
   }
   return {
-    name: "GreatClub",
+    name: "Great Club",
     quantity: q,
     type: "Simple melee",
     value: 0.2 * q,
@@ -200,7 +200,7 @@ function lightCrossbow(x) {
     q = x;
   }
   return {
-    name: "LightCrossbow",
+    name: "Light Crossbow",
     quantity: q,
     type: "Simple ranged",
     value: 25 * q,

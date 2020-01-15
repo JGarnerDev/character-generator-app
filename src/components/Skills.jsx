@@ -39,9 +39,9 @@ export default class Skills extends React.Component {
       children.push(
         <tr className="skill-row">
           <td className="skill-name">{this.reverseCamelCase(characterSkillNames[i])}</td>
-          <td className="skill-value-total">{skillValue}</td>
-          <td className="skill-value-abilityMod">{abilityModifier}</td>
-          <td className="skill-value-proficiencyBonus">{proficiencyBonus}</td>
+          <td className="skill-value">{skillValue}</td>
+          <td className="skill-value">{abilityModifier}</td>
+          <td className="skill-value">{proficiencyBonus}</td>
         </tr>
       );
 
@@ -53,6 +53,6 @@ export default class Skills extends React.Component {
   };
 
   render() {
-    return <table className="table" id="Skills">{this.createSkillsTable()}</table>;
+    return <div id="Skills"><table id="skills-table">{this.createSkillsTable()}</table></div>;
   }
 }

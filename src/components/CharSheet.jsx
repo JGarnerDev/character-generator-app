@@ -10,52 +10,35 @@ import Features from "./Features";
 import Spells from "./Spells";
 
 function CharSheet(props) {
-  const characterSummary =
-    <p>{props.character.name.split(" ")[0] +
-    " was once a " +
-    props.character.background.name.toLowerCase() +
-    ", and " +
-    props.character.background.intro +
-    " But now that adventure calls, they have found that they can answer as a mighty " +
-    props.character.class.name.toLowerCase() +
-    "."}</p>
+  const characterSummary = (
+    <p>
+      {props.character.name.split(" ")[0] +
+        " was once a " +
+        props.character.background.name.toLowerCase() +
+        ", and " +
+        props.character.background.intro +
+        " But now that adventure calls, they have found that they can answer as a mighty " +
+        props.character.class.name.toLowerCase() +
+        "."}
+    </p>
+  );
 
   return (
     <div id="CharSheet">
-      <div id="first-page" className="page">
-        <div id="summary">{characterSummary}</div>
-        <div className="column-container">
-          <div className="column">
+      <div id="summary">{characterSummary}</div>
+      <div id="page1" className="page">
+        <div className="page-column">
+          <div className="container">
             <Abilities {...props} />
+            <Proficiencies {...props} />
+          </div>
+          <div className="container">
             <Skills {...props} />
           </div>
-          <div className="column">
-            <Equipment {...props} />
-            <Items {...props} />
-          </div>
         </div>
       </div>
-      <div id="second-page" className="page">
-        <div className="column">
-          <Proficiencies {...props} />
-        </div>
-        <div className="column">
-          <Features {...props} />
-        </div>
-        <div className="column">
-          
-        </div>
-      </div>
-      <div id="third-page" className="page">
-        <div className="column">
-           <Spells {...props} />
-        </div>
-      </div>
-      <div id="forth-page" className="page">
-        <div className="column">
-          <Bio {...props} />
-        </div>
-      </div>
+      <div id="page2" className="page"></div>
+      <div id="page3" className="page"></div>
     </div>
   );
 }
