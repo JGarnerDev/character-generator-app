@@ -1,0 +1,54 @@
+#Spells {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+#spells-header {
+    width: 100%;
+    text-align: center;
+}
+
+#spells-table {
+    text-align: center;
+}
+
+.spells-subheader-title {
+    text-align: center;
+  
+}
+
+.spell-name {
+    width: 10vw;
+}
+.spell-desc {
+    width: 30vw;
+}
+.spell-castingTime {
+    width: 5vw;
+}
+.spell-duration {
+    width: 2vw;
+}
+.spell-attackOrSave {
+    width: 2vw;
+}
+.spell-damageOrEffect {
+    width: 2vw;
+}
+.spell-range {
+    width: 2vw;
+}
+.spell-area {
+    width: 4vw;
+}
+.spell-targets {
+    width: 5vw;
+}
+.spell-components {
+    width: 10vw;
+}
+.spell-ritual {
+    width: 4vw;
+}

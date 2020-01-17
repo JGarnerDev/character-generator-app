@@ -7,9 +7,7 @@ export default class Skills extends React.Component {
   }
   reverseCamelCase(string) {
     var lowerCasedString = string.replace(/([A-Z])/g, " $1");
-    return (
-      lowerCasedString.charAt(0).toUpperCase() + lowerCasedString.slice(1)
-    );
+    return lowerCasedString.charAt(0).toUpperCase() + lowerCasedString.slice(1);
   }
 
   createSkillsTable = () => {
@@ -38,7 +36,9 @@ export default class Skills extends React.Component {
 
       children.push(
         <tr className="skill-row">
-          <td className="skill-name">{this.reverseCamelCase(characterSkillNames[i])}</td>
+          <td className="skill-name">
+            {this.reverseCamelCase(characterSkillNames[i])}
+          </td>
           <td className="skill-value">{skillValue}</td>
           <td className="skill-value">{abilityModifier}</td>
           <td className="skill-value">{proficiencyBonus}</td>
@@ -46,13 +46,16 @@ export default class Skills extends React.Component {
       );
 
       table.push(children);
-
     }
 
     return table;
   };
 
   render() {
-    return <div id="Skills"><table id="skills-table">{this.createSkillsTable()}</table></div>;
+    return (
+      <div id="Skills">
+        <table id="skills-table">{this.createSkillsTable()}</table>
+      </div>
+    );
   }
 }

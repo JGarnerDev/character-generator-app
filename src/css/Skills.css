@@ -1,23 +1,21 @@
 #Skills {
-   
-    flex-grow: 1;
-    border: 1px black solid;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    font-size: calc(0.85vh + 0.05vw);
+  height: 42%;
+  font-size: 1.05em;
 }
 
 #skills-table {
-    width: 100%;
+    position: relative;
+  width: 100.75%;
+  left: -0.25%;
+  outline: none;
 }
 
 .skill-name {
-    font-size: 1.25em;
+  padding: 0%;
 }
 
 .skill-value {
-    text-align: center;
-    font-size: 1.25em;
+  padding: 0%;
+  text-align: center;
+  
 }

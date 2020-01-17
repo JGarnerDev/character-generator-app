@@ -1,20 +1,7 @@
 #Abilities {
-    width: auto;
-    font-size: 1.6em;
-    border: 1px black solid;
-    margin: 0.5%;
+  height: 20%;
+  margin-bottom: 1.5%;
+  font-size: 1.5em;
+  outline: 1px black solid;
 }
-.ability-row {}
-.ability-header {
-    position: relative;
-    width: 50%;
-    left: 15%;
-    text-align: center;
-}
-.ability-value {
-    position: relative;
-    width: 50%;
-    text-align: center;
-    left: -15%;
-    z-index: 0;
-}
+

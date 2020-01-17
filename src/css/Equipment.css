@@ -1,0 +1,123 @@
+#Equipment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+ 
+  outline: 1px black solid;
+}
+.equipment-header {
+  text-align: center;
+  margin: 0.5%;
+  
+}
+
+#weapon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 72%;
+
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  outline: 1px black solid;
+}
+
+#weapons-table {
+  width: 100%;
+  text-align: center;
+  
+}
+.weapons-table-header {
+}
+.weapons-table-value {
+    outline: none;
+}
+
+
+
+#weapons-header-name {
+  width: 20%;
+}
+#weapons-header-attack {
+  width: 3vw;
+}
+#weapons-header-damage {
+  width: 3vw;
+}
+#weapons-header-damageType {
+  width: 3vw;
+}
+#weapons-header-weaponType {
+  width: 15%;
+}
+#weapons-header-properties {
+  width: 14vw;
+ 
+}
+
+.weapons-value-weaponName {
+  height: 3vh;
+  max-height: 3.7vh;
+  text-align: start;
+}
+.weapons-value-attackBonus {
+}
+.weapons-value-damage {
+}
+.weapons-value-damageType {
+}
+.weapons-value-weaponType {
+}
+.weapons-value-weaponProperties {
+  text-align: start;
+  
+}
+
+#armor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 26%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  outline: 1px black solid;
+}
+
+#armor-table {
+  text-align: center;
+  
+}
+
+#armor-header-name {
+  width: 15%;
+}
+#armor-header-ac {
+  width: 3vw;
+}
+#armor-header-type {
+  width: 3vw;
+}
+#armor-header-maxDex {
+  width: 7vw;
+}
+#armor-header-stealth {
+  width: 8vw;
+}
+#armor-header-strReq {
+  width: 8vw;
+}
+
+.armor-value-name {
+  text-align: start;
+}
+.armor-value-ac {
+}
+.armor-value-type {
+}
+.armor-value-maxDex {
+}
+.armor-value-stealth {
+}
+.armor-value-strReq {
+}

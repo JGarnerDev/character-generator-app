@@ -28,17 +28,26 @@ function CharSheet(props) {
       <div id="summary">{characterSummary}</div>
       <div id="page1" className="page">
         <div className="page-column">
-          <div className="container">
-            <Abilities {...props} />
-            <Proficiencies {...props} />
-          </div>
-          <div className="container">
-            <Skills {...props} />
-          </div>
+          <Abilities {...props} />
+          <Proficiencies {...props} />
+          <Skills {...props} />
+        </div>
+        <div className="page-column">
+          <Equipment {...props} />
+          <Items {...props} />
         </div>
       </div>
-      <div id="page2" className="page"></div>
-      <div id="page3" className="page"></div>
+      <div id="page2" className="page">
+        <div className="page-column">
+          <Features {...props} />
+        </div>
+        <div className="page-column">
+          <Bio {...props} />
+        </div>
+      </div>
+      <div id="page3" className="page">
+        <Spells {...props} />
+      </div>
     </div>
   );
 }

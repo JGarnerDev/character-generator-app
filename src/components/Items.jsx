@@ -12,8 +12,8 @@ export default class Items extends React.Component {
       <tr className="items-table-row">
         <th className="items-table-header">Item</th>
         <th className="items-table-header">#</th>
-        <th className="items-table-header">Value</th>
-        <th className="items-table-header">Weight</th>
+        <th className="items-table-header">Val.</th>
+        <th className="items-table-header">Wgt.</th>
       </tr>
     );
 
@@ -33,7 +33,9 @@ export default class Items extends React.Component {
 
       children.push(
         <tr className="items-table-row">
-          <td className="items-table-value" id="item-name">{itemName}</td>
+          <td className="items-table-value" id="item-name">
+            {itemName}
+          </td>
           <td className="items-table-value">{itemQuantity}</td>
           <td className="items-table-value">{itemValue}</td>
           <td className="items-table-value">{itemWeight}</td>
@@ -44,23 +46,34 @@ export default class Items extends React.Component {
     }
     table.push(
       <tr className="items-table-row">
-        <td className="items-table-value"></td>
-        <td className="items-table-value"></td>
-        <td className="items-table-value">Net value:{netWorth}</td>
-        <td className="items-table-value">Net weight:{netWeight}</td>
+        <td className="items-table-value" id="item-name"></td>
+        <td className="items-table-value" ></td>
+        <td className="items-table-netValue">Net value: {netWorth}</td>
+        <td className="items-table-netValue">Net weight: {netWeight}</td>
       </tr>
     );
-
-    return table;
+    let table1 = table.slice(0, 14);
+    let table2 = table.slice(15, 32);
+    table2.unshift(
+      <tr className="items-table-row">
+        <th className="items-table-header">Item</th>
+        <th className="items-table-header">#</th>
+        <th className="items-table-header">Val.</th>
+        <th className="items-table-header">Wgt.</th>
+      </tr>
+    );
+    let tables = [table1, table2];
+    return tables;
   };
 
   render() {
     return (
-      <div className="table" id="Items">
+      <div id="Items">
         <h3 id="items-header">Inventory</h3>
-        <table  id="items-table">
-          {this.createItemsTable()}
-        </table>{" "}
+        <div id="items-container">
+          <table id="items-table1">{this.createItemsTable()[0]}</table>{" "}
+          <table id="items-table2">{this.createItemsTable()[1]}</table>{" "}
+        </div>
       </div>
     );
   }

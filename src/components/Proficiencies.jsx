@@ -126,7 +126,7 @@ export default class Proficiencies extends React.Component {
   render() {
     return (
       <div id="Proficiencies">
-        <h1 id="proficiencies-header">Proficiencies</h1>
+        <h3 id="proficiencies-header">Proficiencies</h3>
         <ul id="proficiencies-list">{this.createProficienciesTable()}</ul>
       </div>
     );

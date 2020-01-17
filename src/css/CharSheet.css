@@ -19,14 +19,15 @@
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   background-color: lightgray;
   outline: black 2px solid;
 }
 .page {
   display: flex;
   width: 96%;
-  height: 28%;
+  min-height: 28%;
+  max-height: 28%;
   margin-top: 1%;
   margin-bottom: 4%;
   background-color: lightgray;
@@ -35,15 +36,11 @@
 .page-column {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 50%;
+  margin: 0.5%;
+  padding: 0.5%;
   background-color: lightgray;
-  outline: black 2px solid;
+  outline: 1px black solid;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
 
-flex-grow: 1;
-}
