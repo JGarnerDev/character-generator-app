@@ -32,12 +32,11 @@
     opacity: 0.9;
 }
 #logo {
-    width: 40%;
-    max-width: 100px;
+    width: 16vh;
     height: auto;
 }
 #logo-text {
-    font-size: calc(1.4vh + 1.2vw);
+    font-size: 4vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
