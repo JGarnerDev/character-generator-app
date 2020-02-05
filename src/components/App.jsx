@@ -43,15 +43,26 @@ export default class App extends Component {
               Generate a Character!
             </button>
           </div>
+
           <CharSheet
             character={this.state.character}
             resources={this.state.resources}
           />
+          <img id="background-img" src="https://i.imgur.com/M5S6kHv.jpg"></img>
         </div>
       );
     } else {
       return (
         <div id="App">
+          <img id="background-img" src="https://i.imgur.com/M5S6kHv.jpg"></img>
+
+          <div id="logo-container">
+            <img id="logo" src="https://i.imgur.com/RahOwe9.png" alt=""></img>
+            <div id="logo-text">
+              <h1 id="logo-text-Character">Character</h1>
+              <h1 id="logo-text-Generator">Generator</h1>
+            </div>
+          </div>
           <div id="header-before">
             <button
               className="generate-button"

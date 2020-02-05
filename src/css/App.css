@@ -1,14 +1,55 @@
 /* FINAL-ISH */
 
 #App {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   height: auto;
   font-size: calc(0.8vh + 0.1vw);
-  background-color: lightblue;
 }
+
+#background-img {
+  position: sticky;
+  bottom: 0%;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+}
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 20%;
+    min-height: 50px;
+    width: 75%;
+    margin-top: 10vh;
+    margin-left: 12.5%;
+    background-color:  rgb(184, 170, 70);
+    border:  5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    opacity: 90%;
+}
+#logo {
+    width: 40%;
+    max-width: 100px;
+    height: auto;
+}
+#logo-text {
+    font-size: calc(1.4vh + 1.2vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+#logo-text-Character {
+    margin: 0%;
+}
+#logo-text-Generator {
+   margin: 0%;
+
+}
+
+
 
 #header-before {
   display: flex;
@@ -17,10 +58,12 @@
   position: absolute;
   min-height: 14vh;
   max-height: 125px;
-  top: 2vh;
-  width: 100%;
-  background-color: rgb(80, 190, 166);
-  border: black 2px solid;
+  top: 55vh;
+  width: 100vw;
+  font-size: 1.5em;
+  background-color: rgb(184, 170, 70);
+  outline: black 2px solid;
+  opacity: 80%;
 }
 
 #header-after {
@@ -30,10 +73,11 @@
   min-height: 14vh;
   max-height: 125px;
   top: 2vh;
-  position:  sticky ;
+  position: sticky;
   z-index: 1;
-  background-color: rgb(80, 190, 166);
-  border: black 2px solid;
+  background-color: rgb(184, 170, 70);
+  outline: black 2px solid;
+  opacity: 100%;
 }
 
 #character-title {
@@ -67,7 +111,7 @@
   height: 4em;
   width: 40%;
   min-width: 6em;
-  font-size: 2em;
+ 
   -webkit-box-shadow: inset 0px 0px 12px 0px #000000;
   box-shadow: inset 0px 0px 5px 0px #000000;
   border-radius: 10px;
@@ -76,16 +120,21 @@
 #generate-button-before {
   margin-top: 1.11em;
   margin-bottom: 1.11em;
+
 }
 
 #generate-button-after {
   width: 15%;
+  
 }
 
 p {
   margin: 2%;
 }
 
- th, td {
-    outline: 1px solid black;
+th,
+td {
+  outline: 1px solid black;
 }
+
+
